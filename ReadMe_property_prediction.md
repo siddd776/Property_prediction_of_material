@@ -35,14 +35,14 @@ Alloy design traditionally relies on empirical rules and expensive physical test
 
 **Interpretation:** Ridge regression, even with regularization to handle multicollinearity, only explains ~63% of variance — confirming that tensile strength in this system is governed by non-linear interactions between composition and processing that a linear model structurally cannot capture. Tree-based ensembles close that gap almost entirely, with XGBoost as the best performer (R² = 0.947, MAE ≈ 21.4 MPa).
 
-## Explainability (Planned)
+## Explainability (SHAP)
 
 SHAP-based feature attribution is planned as the next step, to:
 - Rank features by contribution to individual predictions
 - Sanity-check model behavior against known metallurgical effects (e.g., Mo/Cr contribution to hardenability, Temperature's softening effect)
 - Flag any learned relationships that *don't* align with metallurgical expectations, as a model-trust check
 
-*(This section will be updated once SHAP analysis is complete.)*
+[SHAP Summary Plot](shap_summary.png)
 
 ## Deployment
 
